@@ -40,7 +40,9 @@
       text-align: center;
       padding: 10px;
     }
-
+    p{
+        color: #ffc0cb;
+    }
     .gatito img {
       max-width: 100%;
       height: auto;
@@ -53,7 +55,23 @@
       font-size: 0.9em;
       background-color: #ffe4e1;
     }
+    .gatito p.mensaje {
+  
+  font-weight: bold;
+  color: #e91e63;
+  margin-top: 10px;
+}
 
+.gatito:active p.mensaje,
+.gatito:hover p.mensaje {
+  display: block;
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
 <body>
      <header>
@@ -63,15 +81,15 @@
   <main class="galeria">
     <div class="gatito">
       <img src="https://tse2.mm.bing.net/th/id/OIP.WYhEV2q3pgc1m-ScbNQeZQHaEv?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gatito 1">
-      <p>Este es un gatito muy tierno.</p>
+      <p class="mensaje">¡Este gatito te quiere mucho! 💖</p>
     </div>
     <div class="gatito">
        <img src="https://tse3.mm.bing.net/th/id/OIP.Meo_P8UHNpLBmW9YtNdpBAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gatito 2">
-       <p>Le encanta dormir todo el día.</p>
+       <p class="mensaje">Le encanta dormir todo el día.</p>
       </div>
     <div class="gatito">
        <img src="https://vetstreet-brightspot.s3.amazonaws.com/68/343800694811e197a3005056ad4734/file/Kitten_131855215.jpg" alt="Gatito 3">
-       <p>este esta enojado >:3</p>
+       <p class="mensaje">este esta enojado >:3</p>
     </div>
   </main>
   <footer>
